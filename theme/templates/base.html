@@ -34,13 +34,13 @@
         {% endblock head %}
     </head>
 
-    <body id="index" class="archive">
+    <body id="index" class="archive" onclick='window.location.href="random.html"'>
         <div class="container">
             {% block content %}
             {% endblock %}
 
             <div class="header">
-                <h3><a href="{{ SITEURL }}">{{ SITENAME }}</a></h3>
+                <h3 align="center"><a href="{{ SITEURL }}/archives.html">{{ SITENAME }}</a></h3>
              </div>
         </div><!-- container -->
 		{% include 'analytics.html' %}
